@@ -35,7 +35,7 @@ function Navbar() {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div>
-        <img src="./img/hero_logo.png" alt="Logoipsum" />
+        <img src="./img/hero_logo.png" alt="Logo_Maha" />
       </div>
       {/* ✅ Changé <a> en <button> pour une meilleure accessibilité */}
       <button
@@ -71,10 +71,10 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="MySkills"
+              to="AboutMe"
               className="navbar--content"
             >
-              Skills
+              About Me
             </Link>
           </li>
           <li>
@@ -91,34 +91,8 @@ function Navbar() {
               Portfolio
             </Link>
           </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="AboutMe"
-              className="navbar--content"
-            >
-              About Me
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="testimonial"
-              className="navbar--content"
-            >
-              Testimonials
-            </Link>
-          </li>
+          
+
         </ul>
       </div>
       <Link
