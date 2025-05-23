@@ -9,15 +9,16 @@ export default function AboutMe() {
           <p className="section--title">About</p>
           <h1 className="skills-section--heading">About Me</h1>
           <p className="hero--section-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            officiis sit debitis omnis harum sed veniam quasi dicta accusamus
-            recusandae? Voluptatem, reprehenderit alias? Eligendi aperiam
-            tempora numquam sint odit optio.
+           I'm Maha, a Software Engineer and current Ph.D. student in Artificial Intelligence, 
+           with a strong academic background from the Moroccan School of Engineering Sciences. 
+           Passionate about research, problem-solving, and emerging technologies, 
+           I bring a thoughtful and detail-oriented approach to every project I work on.
           </p>
           <p className="hero--section-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            officiis sit debitis omnis harum sed veniam quasi dicta accusamus
-            recusandae?
+            Throughout my journey, I've worked on diverse challenges—ranging from software development and AI model 
+            training to biometric database enhancement—always with a focus on impact, precision, and innovation. 
+            I believe that technology, when designed thoughtfully, has the power to improve lives and solve real-world problems.
+
           </p>
         </div>
       </div>

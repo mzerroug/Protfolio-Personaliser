@@ -15,7 +15,7 @@ function Navbar() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 500) {
-        closeMenu;
+        closeMenu(); // ✅ Ajout des parenthèses pour appeler la fonction
       }
     };
 
@@ -28,7 +28,7 @@ function Navbar() {
 
   useEffect(() => {
     if (window.innerWidth <= 1200) {
-      closeMenu;
+      closeMenu(); // ✅ Ajout des parenthèses pour appeler la fonction
     }
   }, []);
 
@@ -37,14 +37,16 @@ function Navbar() {
       <div>
         <img src="./img/hero_logo.png" alt="Logoipsum" />
       </div>
-      <a
+      {/* ✅ Changé <a> en <button> pour une meilleure accessibilité */}
+      <button
         className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={toggleNav}
+        aria-label="Toggle navigation menu"
       >
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
-      </a>
+      </button>
       <div className={`navbar--items ${navActive ? "active" : ""}`}>
         <ul>
           <li>
@@ -59,6 +61,20 @@ function Navbar() {
               className="navbar--content"
             >
               Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="MySkills"
+              className="navbar--content"
+            >
+              Skills
             </Link>
           </li>
           <li>
